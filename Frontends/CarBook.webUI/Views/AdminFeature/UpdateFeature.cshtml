@@ -1,0 +1,43 @@
+﻿
+
+@model ResultUpdateFeatureDto
+@{
+    ViewData["Title"] = "UpdateFeature";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="container-fluid">
+
+    <!-- start page title -->
+    <div class="row">
+        <div class="col-xl-12">
+
+            <div class="card">
+                <div class="card-body">
+
+                    <h4 class="card-title">Yeni Araç Güncelleme Sayfası</h4>
+                    <p class="card-subtitle mb-4">Araç ile ilgili Özellikleri Güncelleyip kaydet butonuna basın.  </p>
+
+                    <form method="post">
+
+                        <div class="form-group">
+                            <input type="hidden" asp-for="FeatureId"/>
+                            <label for="exampleInputFeature">Özellik Adı</label>
+                            <input type="text" class="form-control" id="exampleInputFeature" asp-for="FeatureName" placeholder="Özellik girişi Yapınız">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary waves-effect waves-light">Kaydet</button>
+                    </form>
+
+                </div> <!-- end card-body-->
+            </div>
+
+        </div>
+        <!-- end card-body-->
+    </div>
+    <!-- end card -->
+
+</div>
+
+
+
